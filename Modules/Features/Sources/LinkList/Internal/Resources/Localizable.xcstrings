@@ -1,13 +1,10 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Content" : {
+    "Add" : {
 
     },
-    "Links" : {
-
-    },
-    "Toggle sidebar" : {
+    "New link" : {
 
     }
   },

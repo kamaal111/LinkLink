@@ -4,31 +4,29 @@
 import PackageDescription
 
 let package = Package(
-    name: "Navigation",
+    name: "Features",
     defaultLocalization: "en",
     platforms: [.macOS(.v14), .iOS(.v17)],
     products: [
         .library(
-            name: "Navigation",
-            targets: ["Navigation"]),
+            name: "LinkList",
+            targets: ["LinkList"]),
     ],
     dependencies: [
         .package(url: "https://github.com/Kamaalio/KamaalSwift.git", .upToNextMajor(from: "1.2.0")),
-        .package(path: "../Features"),
     ],
     targets: [
         .target(
-            name: "Navigation",
+            name: "LinkList",
             dependencies: [
-                .product(name: "KamaalNavigation", package: "KamaalSwift"),
                 .product(name: "KamaalUI", package: "KamaalSwift"),
-                .product(name: "LinkList", package: "Features")
+                .product(name: "KamaalExtensions", package: "KamaalSwift"),
             ],
             resources: [
                 .process("Internal/Resources"),
             ]),
         .testTarget(
-            name: "NavigationTests",
-            dependencies: ["Navigation"]),
+            name: "LinkListTests",
+            dependencies: ["LinkList"]),
     ]
 )

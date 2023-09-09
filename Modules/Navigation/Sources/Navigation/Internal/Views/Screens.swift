@@ -9,33 +9,33 @@ import Foundation
 import KamaalNavigation
 
 enum Screens: CaseIterable, Identifiable, NavigatorStackValue {
-    case home
+    case linkList
 
     var id: Self { self }
 
     var isTabItem: Bool {
         switch self {
-        case .home: true
+        case .linkList: true
         }
     }
 
     var isSidebarItem: Bool {
         switch self {
-        case .home: true
+        case .linkList: true
         }
     }
 
     var title: String {
         switch self {
-        case .home: NSLocalizedString("Home", bundle: .module, comment: "")
+        case .linkList: NSLocalizedString("Links", bundle: .module, comment: "")
         }
     }
 
     var imageSystemName: String {
         switch self {
-        case .home: "house.fill"
+        case .linkList: "list.triangle"
         }
     }
 
-    static var root: Screens = .home
+    static var root: Screens = .linkList
 }

@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C1933702AAD0DE1008D0D3D /* Features */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Features; sourceTree = "<group>"; };
 		2CD6F6BF2AAD03680093840D /* Navigation */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Navigation; sourceTree = "<group>"; };
 		2CF847302AABA0700050F11E /* LinkLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF847332AABA0700050F11E /* LinkLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkLinkApp.swift; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		2CD6F6BE2AAD03470093840D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2C1933702AAD0DE1008D0D3D /* Features */,
 				2CD6F6BF2AAD03680093840D /* Navigation */,
 			);
 			path = Modules;

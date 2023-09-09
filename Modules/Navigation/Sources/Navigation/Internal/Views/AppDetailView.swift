@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import KamaalUI
+import LinkList
 import KamaalNavigation
 
 struct AppDetailView: View {
@@ -18,12 +20,15 @@ struct AppDetailView: View {
     }
 
     var body: some View {
-        switch screen {
-        case .home: Text(screen.title)
+        KJustStack {
+            switch screen {
+            case .linkList: LinkListScreen()
+            }
         }
+        .navigationTitle(screen.title)
     }
 }
 
 #Preview {
-    AppDetailView(screen: .home)
+    AppDetailView(screen: .root)
 }
