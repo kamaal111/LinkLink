@@ -27,7 +27,7 @@ enum Screens: CaseIterable, Identifiable, NavigatorStackValue {
 
     var title: String {
         switch self {
-        case .home: "Home"
+        case .home: NSLocalizedString("Home", bundle: .module, comment: "")
         }
     }
 

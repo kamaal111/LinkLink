@@ -19,7 +19,7 @@ struct AppDetailView: View {
 
     var body: some View {
         switch screen {
-        case .home: Text("Home")
+        case .home: Text(screen.title)
         }
     }
 }
